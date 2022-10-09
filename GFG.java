@@ -1,6 +1,7 @@
 class GFG{
       public static void main (String[] args){
         String s = "this is a word";
+        String sAns = "";
         String[] arr = s.split(" "); 
         int i;
         char ch;
@@ -19,11 +20,13 @@ class GFG{
                     }
                 }
                 if(ans > nans){
-                    nans = ans;
+                    nans = ans; 
+                    sAns = arr[m];
                 } 
             }
             ans = 0;
         }
-        System.out.println(nans); 
+        System.out.println(nans);
+        System.out.println(sAns); 
     } 
 }
